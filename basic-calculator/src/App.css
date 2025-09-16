@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,58 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.calculator-container {
+  background-color: #111;
+  width: 400px;
+  min-height: 580px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgb(151, 168, 125), -1px -1px 2px rebeccapurple;
+}
+
+.input-box {
+  width: 90%;
+  margin-top: 30px;
+  padding: 12px;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(37, 39, 39);
+  font-size: 20px;
+  text-align: right;
+  outline: none;
+}
+
+.btn-container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.row-btns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 10px;
+  padding: 10px;
+}
+.row-btns button {
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.equalTo-btn {
+  background-color: orange;
 }
