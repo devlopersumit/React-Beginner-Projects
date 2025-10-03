@@ -1,14 +1,11 @@
+import React from 'react'
+import Weather from './components/Weather'
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-<div>
- <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-</div>
+    <div>
+      <Weather />
+    </div>
   )
 }
 
